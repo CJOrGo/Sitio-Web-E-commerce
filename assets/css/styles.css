@@ -1,0 +1,147 @@
+/* Estilos generales */
+body {
+   /* margin: 0;
+    padding: 0;
+    background-color: #2413de47;
+    font-family: monospace;
+    background-image: url('/assets/img/header.jpg');*/
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    /* Creamos una capa de color semitransparente sobre la imagen */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/assets/img/header.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* La imagen se queda quieta al hacer scroll */
+}
+
+
+header {
+    background-color: #0d1e9f; 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    /*background-image: url('/assets/img/header.jpg');*/
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #af0a65; /* Rosa Mexicano */
+    border-radius: 10px;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Aplicación del Modelo de Caja en el Banner */
+#banner {
+    width: 80%;
+    margin: 20px auto; /* Margen externo */
+    padding: 15px;      /* Espacio interno */
+    border: 2px solid #ddd;
+    background-color: white;
+    text-align: center;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+/* Ajustar altura del carrusel para que no ocupe toda la pantalla */
+.carousel-item img {
+    height: 500px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Evita que la imagen se deforme */
+    filter: brightness(70%); /* Oscurece un poco para que el texto resalte */
+}
+
+.carousel-caption {
+    background: rgba(0, 156, 228, 0.6); 
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Añadir al final de assets/css/styles.css */
+.hidden {
+    display: none;
+}
+/* --- ESTILOS PARA EL CATÁLOGO --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.btn-add-cart {
+    background-color: #af0a65;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Clase inspirada en el formulario de registro */
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.42); /* Similar a #ffffff6c */
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque moderno */
+}
+
+/* Estilo personalizado para la tabla del equipo */
+.custom-table {
+    border-radius: 10px;
+    overflow: hidden; /* Para que los bordes de la tabla se vean redondeados */
+}
+
+.custom-table thead {
+    background-color: #af0a65 !important; /* Rosa Mexicano */
+    color: white;
+}
+
+.custom-table tbody tr {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}

@@ -1,0 +1,126 @@
+/* Estilo del contenedor principal del formulario */
+.container.my-5 {
+    max-width: 600px;         /* Limitamos el ancho para que no se estire demasiado */
+    margin: 5rem auto;       /* Centrado horizontal y margen superior/inferior */
+    padding: 30px;           /* Espacio interno entre el borde y los campos */
+    background-color: #ffffff6c;
+    border: 2px solid #ffffff;  /* Borde suave en lugar de negro sólido */
+    border-radius: 15px;     /* Bordes redondeados para un look moderno */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8); /* Sombra para dar profundidad */
+    box-sizing: border-box;  /* El padding no afecta el ancho total */
+}
+
+/* Estilo de los títulos dentro del formulario */
+#registro-form h2 {
+    color: #011c4e;         
+    font-family: 'Palatino', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo para las etiquetas (Labels) */
+.form-label {
+    font-weight: bold;
+    color: #150602;         
+    margin-bottom: 8px;
+
+}
+
+/* Estilo de los campos de entrada (Inputs) */
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: #e400af;   /* Rosa Mexicano al hacer clic */
+    box-shadow: 0 0 8px rgba(228, 0, 141, 0.2);
+    outline: none;
+}
+
+/* Estilo del botón de registro */
+#btnEnviar {
+    background-color: #ec4ac9; /* Rosa Mexicano */
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+#btnEnviar:hover:not(:disabled) {
+    background-color: #b00072; /* Un rosa más oscuro al pasar el mouse */
+}
+
+/* Estilo para el botón deshabilitado */
+#btnEnviar:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Estilos generales */
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    /* Creamos una capa de color semitransparente sobre la imagen */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/assets/img/header.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* La imagen se queda quieta al hacer scroll */
+    font-size: large;
+}
+
+/*ESTILOS GENERALES PARA EL SITIO WEB*/
+header {
+    background-color: #0d1e9f; 
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    /*background-image: url('/assets/img/header.jpg');*/
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #af0a65; /* Rosa Mexicano */
+    border-radius: 10px;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Aplicación del Modelo de Caja en el Banner */
+.form-control{
+  margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Aplicación del Modelo de Caja en el Banner */
+button{
+
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin: 20px;
+}

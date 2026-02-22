@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../assets/css/stylerg.css">
+    <script src="../assets/js/botton.js"></script>
+</head>
+<body>
+     <header>
+        <h1>Alba</h1>
+        <p>Arte y tradición</p>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="nosotros.html">Quiénes Somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito (<span id="cart-counter">0</span>)</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <section id="registro-form" class="mx-auto" style="max-width: 500px;">
+            <h2 class="text-center mb-4">Formulario de Registro</h2>
+            <form id="formRegistro">
+                <div class="mb-3">
+                    <label class="form-label">Nombre completo:</label>
+                    <input type="text" id="nombre" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Correo electrónico:</label>
+                    <input type="email" id="email" class="form-control" 
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Contraseña:</label>
+                    <input type="password" id="password" class="form-control" minlength="8" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Fecha de nacimiento:</label>
+                    <input type="date" id="fechaNac" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Teléfono:</label>
+                    <input type="tel" id="telefono" class="form-control" required>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="terminos" class="form-check-input">
+                    <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+                </div>
+
+                <button type="submit" id="btnEnviar" class="btn btn-primary w-100" disabled>Registrarse</button>
+            </form>
+        </section>
+    </main>
+<script src="../assets/js/carrito.js"></script>
+</body>
+</html>

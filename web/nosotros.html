@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quiénes Somos? | Alba</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Alba</h1>
+        <p>Arte y tradición</p>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="nosotros.html">Quiénes Somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito (<span id="cart-counter">0</span>)</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <section id="mision-vision" class="glass-card mb-5">
+            <h2 class="text-center mb-4" style="color: #011c4e; font-family: 'Palatino', serif;">Nuestros Valores</h2>
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <ul class="list-group list-group-flush" style="background: transparent;">
+                        <li class="list-group-item" style="background: transparent;"><strong>Misión:</strong> Dar a conocer a los artesanos locales y sus obras mediante herramientas tecnológicas de vanguardia.</li>
+                        <li class="list-group-item" style="background: transparent;"><strong>Visión:</strong> Ser la plataforma líder mundial en la difusión del arte tradicional mexicano.</li>
+                        <li class="list-group-item" style="background: transparent;"><strong>Valores:</strong> Autenticidad, Respeto, Calidad y Compromiso Social.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="../assets/img/oaxaca.png" width="200" alt="Logo de Alba" class="img-fluid rounded shadow"/>
+                </div>
+            </div>
+        </section>
+
+        <section id="descripcion" class="glass-card mb-5">
+            <h2 style="color: #011c4e; font-family: 'Palatino', serif;">Nuestra Historia</h2>
+            <p>
+                Alba nace del deseo de conectar la riqueza cultural de los artesanos mexicanos con el mundo digital. 
+                Nuestra plataforma no solo vende productos, cuenta historias tejidas a mano y moldeadas con el corazón.
+            </p>
+            
+            <div id="info-adicional" class="hidden mt-3">
+                <p>Trabajamos directamente con comunidades en Oaxaca, Chiapas y Guerrero, asegurando un comercio justo y la preservación de técnicas ancestrales.</p>
+            </div>
+
+            <button id="btn-ver-mas" class="btn btn-primary mt-3" style="background-color: #af0a65; border: none;">Ver más</button>
+        </section>
+        
+        <section id="equipo" class="glass-card mb-5">
+            <h2 class="text-center mb-4" style="color: #011c4e; font-family: 'Palatino', serif;">Nuestro Equipo</h2>
+            <div class="table-responsive custom-table">
+                <table class="table table-hover shadow-sm mb-0">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Rol</th>
+                            <th>Correo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Bautista González Wendy Paola</strong></td>
+                            <td>Desarrolladora Frontend - Directora de Arte y Contenido</td>
+                            <td>wendy.bautista@hotmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ruíz Rafael Samuel</strong></td>
+                            <td>Desarrollador Backend - Arquitecto de Datos</td>
+                            <td>samuel.ruiz@hotmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Orozco González Carlos Joás</strong></td>
+                            <td>Desarrollador de Backend/Interactividad - Coordinador de Comunicación</td>
+                            <td>carlos.orozco@hotmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="../assets/js/noscript.js"></script>
+    <script src="../assets/js/carrito.js"></script>
+</body>
+</html>
