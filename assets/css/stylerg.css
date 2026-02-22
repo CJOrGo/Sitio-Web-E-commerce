@@ -65,14 +65,13 @@
 
 /* Estilos generales */
 body {
-
     margin: 0;
     padding: 0;
     font-family: monospace;
-    /* Creamos una capa de color semitransparente sobre la imagen */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('/assets/img/header.jpg');
+    /* Cambiamos la ruta de /assets/img/ a ../img/ */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../img/header.jpg');
     background-size: cover;
-    background-attachment: fixed; /* La imagen se queda quieta al hacer scroll */
+    background-attachment: fixed; 
     font-size: large;
 }
 
